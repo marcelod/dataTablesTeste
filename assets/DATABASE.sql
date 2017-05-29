@@ -74,3 +74,25 @@ ALTER TABLE `row_group`
 
 ALTER TABLE `row_group`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=46;
+
+
+
+
+CREATE TABLE IF NOT EXISTS `color_picker` (
+`id` int(11) NOT NULL,
+  `titulo` varchar(100) NOT NULL,
+  `cor` varchar(7) NOT NULL DEFAULT '#FFFFFF',
+  `bg_cor` varchar(7) NOT NULL DEFAULT '#000000'
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `color_picker` (`id`, `titulo`, `cor`, `bg_cor`) VALUES
+(1, 'Em andamento', '#ffffff', '#0084b4'),
+(2, 'Pendente', '#ffffff', '#f0ad4e'),
+(3, 'Concluído', '#ffffff', '#098048');
+
+ALTER TABLE `color_picker`
+ ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `color_picker`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;

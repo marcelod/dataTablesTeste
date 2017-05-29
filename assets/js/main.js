@@ -391,3 +391,12 @@ function changeDaysOfWeekInDatepicker() {
 
     $('input.datepicker').datepicker('setDaysOfWeekDisabled', dow);
 }
+
+
+
+
+if ($.fn.minicolors) {
+    $.minicolors.defaults = $.extend($.minicolors.defaults, {
+        theme: 'bootstrap',
+    });
+}
