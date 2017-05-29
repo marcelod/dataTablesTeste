@@ -394,7 +394,6 @@ function changeDaysOfWeekInDatepicker() {
 
 
 
-
 if ($.fn.minicolors) {
     $.minicolors.defaults = $.extend($.minicolors.defaults, {
         theme: 'bootstrap',

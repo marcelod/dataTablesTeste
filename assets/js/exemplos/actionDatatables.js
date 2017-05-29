@@ -171,7 +171,7 @@ function reloadItem(form) {
 }
 
 
-function groupColumnToRowDT(t, column, colspan, classTr = 'info') {
+function groupColumnToRowDT(t, column, colspan, classTr) {
 	var api  = t.api();
     var rows = api.rows( {page:'current'} ).nodes();
     var last = null;

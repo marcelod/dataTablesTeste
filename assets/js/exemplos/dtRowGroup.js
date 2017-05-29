@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 		"drawCallback": function ( settings ) {
 
-			groupColumnToRowDT(this, 0, 2);
+			groupColumnToRowDT(this, 0, 2, 'info');
 
 		}
 	});
